@@ -22,5 +22,12 @@ public class DevopsDockerApplication {
 		return "hello";
 		
 	}
+	
+	@GetMapping("/welcom")
+	public String weclom(){
+		
+		return "welcom";
+		
+	}
 
 }
