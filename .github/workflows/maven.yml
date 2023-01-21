@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean package
+      run: mvn clean install
     - name: Publish to Docker Hub
       uses: docker/build-push-action@v2
       with:
