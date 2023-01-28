@@ -25,8 +25,8 @@ public class DevopsDockerApplication {
 	
 	@GetMapping("/welcom")
 	public String weclom(){
-		
-		return "welcom";
+		String welcome;
+		return "welcome";
 		
 	}
 
