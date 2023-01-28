@@ -53,8 +53,8 @@ jobs:
     - name: Login to DockerHub
       uses: docker/login-action@v2
       with:
-        username: mfouaddocker
-        password: Passw0rd@dockerhub
+        username: ${{ secrets.DOCKER_HUB_USERNAME }}
+        password: ${{ secrets.DOCKER_HUB_PASSWORD }}
     - name: Docker push
       run: |
         docker push mfouaddocker/spring_devops:${{github.run_number}}
